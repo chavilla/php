@@ -1,6 +1,7 @@
 
 <?php
 
+//Declaración de clase
 class Conexion
 {
     protected $db;
@@ -32,7 +33,7 @@ class Conexion
 
 
 
-}
+}// Fin de la clase
 
 
 ?>
