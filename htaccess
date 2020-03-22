@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+
+#activar mod_rewrite
+
+ReWriteEngine on
+ErrorDocument 404 http://localhost:81/master-php/Tienda/error/
+
+ReWriteCond %{SCRIPT_FILENAME} !-d
+ReWriteCond %{SCRIPT_FILENAME} !-f
+
+ReWriteRule ^(.*)/(.*) index.php?controllers=$1&action=$2
+
+</IfModule>
