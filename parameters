@@ -1,0 +1,8 @@
+<?php
+
+/* Definir la url base */
+define("base_url","http://localhost:81/master-php/Tienda/");
+/* Controlador por defecto */
+define("controller_default","productoController");
+/* Método por defecto */
+define("action_default","index");
